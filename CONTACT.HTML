@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us - MakeupHeaven</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="STYLE.CSS"/>
+</head>
+<body>
+
+  <!-- Navbar -->
+   <nav class="navbar navbar-expand-lg navbar-pink">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">💄 MakeupHeaven</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="INDEX.HTML">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="PRODUCT.HTML">Products</a></li>
+          <li class="nav-item"><a class="nav-link" href="CONTACT.HTML">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- same as index -->
+
+  <div class="container my-5">
+    <h2 class="text-center">Contact Us 💌</h2>
+    <form id="contactForm" class="p-4 shadow rounded bg-light mt-4">
+      <div class="mb-3">
+        <label>Name</label>
+        <input type="text" class="form-control" id="name" required />
+      </div>
+      <div class="mb-3">
+        <label>Email</label>
+        <input type="email" class="form-control" id="email" required />
+      </div>
+      <div class="mb-3">
+        <label>Message</label>
+        <textarea class="form-control" id="message" rows="4" required></textarea>
+      </div>
+      <button type="submit" class="btn btn-pink">Submit</button>
+    </form>
+  </div>
+
+  <!-- Footer -->
+    <footer class="footer text-center py-4">
+    <p>&copy; 2025 MakeupHeaven | Stay beautiful 💗</p>
+  </footer>
+
+  <!-- same as index -->
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    $('#contactForm').submit(function(e) {
+      e.preventDefault();
+      let name = $('#name').val().trim();
+      let email = $('#email').val().trim();
+      let message = $('#message').val().trim();
+      if (name && email && message) {
+        alert("Thank you, we'll get back to you!");
+        this.reset();
+      } else {
+        alert("Please fill all fields!");
+      }
+    });
+  </script>
+</body>
+</html>

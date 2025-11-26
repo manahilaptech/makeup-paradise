@@ -1,0 +1,36 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fff0f5;
+}
+.navbar-pink {
+  background-color: #ffccdd;
+}
+.navbar-pink .nav-link {
+  color: #424041 !important;
+  font-weight: bold;
+}
+.hero {
+  background: linear-gradient(to right, #b18c9a, #cfa7b3);
+  padding: 60px 20px;
+  color: #070707;
+  margin-top: 15px;
+}
+.card {
+  border-radius: 15px;
+  transition: transform 0.3s ease;
+}
+.card:hover {
+  transform: scale(1.05);
+}
+.btn-pink {
+  background-color: #ff69b4;
+  color: white;
+  border: none;
+}
+.btn-pink:hover {
+  background-color: #ff1493;
+}
+.footer {
+  background-color: #ffc0cb;
+  color: white;
+}
